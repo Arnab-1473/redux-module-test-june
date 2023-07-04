@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800&family=Poppins:ital,wght@0,200;1,200&family=Ruda&family=Schibsted+Grotesk:ital,wght@0,400;0,600;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Bacasime Antique, sans-serif;
+}
+nav {
+  padding: 1.5rem;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-color: #000000;
+  color: #f3f3f3;
+}
+
+
+/* Home Page styling */
+.home-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.post {
+  border: 1px solid #fff;
+  padding: .2rem .2rem .5rem;
+  border-radius: 0.5rem;
+}
+.post>img {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+.post>p,
+.post>h3 {
+  padding: 0.2rem 1rem;
+}
+.post>p {
+  font-size: 1.3rem;
+}
+.post>h3 {
+  font-size: 1.4rem;
+  margin: .5rem 0 .7rem;
+}
+
+/* ---------------- details page styling ---------*/
+.details {
+  padding: 0 2rem;
+}
+.details>h2 {
+  font-size: 1.8rem;
+}
+.details>img {
+  width: 300px;
+  margin: 1rem 0;
+  border-radius: 0.7rem;
+}
+.details>h3 {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
+.details>p {
+  font-size: 1.4rem;
+}
+
+
+/* loading ball styling ---------------------------------------- */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading h1{
+  color: #007bff;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: #007bff; /* Custom color for the balls */
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.ball:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.ball:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
